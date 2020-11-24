@@ -1,0 +1,177 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 400px;
+    height: 100%;
+    margin: 0;
+}
+
+#button {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#contentField {
+    max-width: 80%
+}
+
+#downloadButton {
+    margin: 0 auto
+}
+
+.accordion {
+    background-color: #2676d2;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #2676d2e0;
+  }
+
+  .accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: 24px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+  }
+
+.panel {
+    padding: 0 18px;
+  background-color: rgba(0, 0, 255, 0.055);
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.sliderContainer {
+    white-space: nowrap;
+    height: 25px;
+    position: relative;
+}
+
+.inlineElement {
+    display: inline-block;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#buttonForm {
+    display: block;
+}
+
+#sliderForm {
+    display: none;
+}
+
+.copyButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pasteButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.copyButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.pasteButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+}
+
+.colorPicker {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    margin-bottom: 100px;
+}
+
+.colorPicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border: 1px solid black;
+}
+
+.colorPicker::-webkit-color-swatch {
+    border: none;
+}
+/* 
+.itemSpan {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+} */
+
+#sandbox {
+    display: none;
+}
+
+.elementContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 50px;
+}
+
+#title {
+    color: #fff;
+    margin-right: 30px;
+}
+
+#titleContainer {
+    background-color: #2676d2;
+}
+
+#cssButtonContainer {
+    height: 50px;
+}
+
+#cssButton {
+    background-color: #fff;
+    border: 2px solid #2676d2;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#cssButton:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #2676d2
+}

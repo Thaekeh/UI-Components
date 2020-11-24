@@ -1,0 +1,263 @@
+<html id="html">
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body id="body">
+    <div class="elementContainer" id="titleContainer">
+        <h2 id="title">UI components</h2>
+        <!-- Copy CSS -->
+    <!-- <div class="elementContainer" id="cssButtonContainer"> -->
+        <button id="cssButton" class="cssButton">Copy CSS</button>
+    <!-- </div> -->
+    </div>
+    <!-- Button UI -->
+    <div class="row" id="buttonForm">
+        <div class="elementContainer" id="background">
+            <button id="button">Click</button>
+        </div>
+        <div class="column">
+            <button class="accordion">Text Styling</button>
+            <div class="panel">
+                <div class="column">
+                    <!-- Content Area -->
+                    <p>Content</p>
+                    <div class="sliderContainer">
+                        <input class="inlineElement slider" type="text" id="contentField" value="Click">
+                    </div>
+                    <!-- Font Size -->
+                    <p>Font Size</p>
+                    <div class="sliderContainer">
+                        <input class="inlineElement slider" type="range" min="1" max="100" value="16"
+                            id="fontsizeSlider">
+                        <span id="fontsizeValue">0</span>
+                    </div>
+                    <!-- Font Weight -->
+                    <p>Font Weight</p>
+                    <div class="sliderContainer">
+                        <input class="inlineElement slider" id="fontWeightSlider" type="range" min="100" max="700"
+                            value="300" step="100">
+                        <span id="fontWeightValue">0</span>
+                    </div>
+                    <!-- Text color -->
+                    <p>Text Color</p>
+                    <div class="sliderContainer">
+                        <span class="itemSpan">
+
+                            <input id="textColorPicker" class="colorPicker" type="color">
+                            <button class="copyButton" id="textColorCopyButton">
+                                Copy
+                            </button>
+                            <button class="pasteButton" id="textColorPasteButton">
+                                Paste
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">
+                Hover Effects
+            </button>
+            <div class="panel">
+                <div class="column">
+                    <!-- Hover Text color -->
+                    <p>Hover Border Color</p>
+                    <div class="sliderContainer">
+                        <input id="hoverBorderColorPicker" class="colorPicker" type="color" value="#0046c7">
+                        <button class="copyButton" id="hoverBorderColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="hoverBorderColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Box Shadow color -->
+                    <p>Box Shadow Color</p>
+                    <div class="sliderContainer">
+                        <input id="hoverBorderColorPicker" class="colorPicker" type="color" value="#0046c7">
+                        <button class="copyButton" id="hoverBorderColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="hoverBorderColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Hover Text color -->
+                    <p>Hover Text Color</p>
+                    <div class="sliderContainer">
+                        <input id="hoverTextColorPicker" class="colorPicker" type="color" value="#ffffff">
+                        <button class="copyButton" id="hoverTextColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="hoverTextColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Hover Background Color -->
+                    <p>Hover Background Color</p>
+                    <div class="sliderContainer">
+                        <input id="hoverColorPicker" class="colorPicker" type="color" value="#0046c7">
+                        <button class="copyButton" id="hoverColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="hoverColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <button class="accordion">Button Styling</button>
+            <div class="panel">
+                <div class="column">
+                    <!-- Button Background color -->
+                    <p>Button Background Color</p>
+                    <div class="sliderContainer">
+                        <input id="backgroundColorPicker" class="colorPicker" type="color" value="#ffffff">
+                        <button class="copyButton" id="backgroundColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="backgroundColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Border color -->
+                    <p>Border Color</p>
+                    <div class="sliderContainer">
+                        <input id="borderColorPicker" class="colorPicker" type="color" value="#0046c7">
+                        <button class="copyButton" id="borderColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="borderColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Box Shadow color -->
+                    <p>Box Shadow Color</p>
+                    <div class="sliderContainer">
+                        <input id="hoverBorderColorPicker" class="colorPicker" type="color" value="#0046c7">
+                        <button class="copyButton" id="hoverBorderColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="hoverBorderColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Border size -->
+                    <p>Border Size</p>
+                    <div class="sliderContainer">
+                        <input class="inlineElement slider" type="range" min="0" max="20" value="1"
+                            id="borderSizeSlider">
+                        <span id="borderSizeValue">0</span>
+                    </div>
+                    <!-- Border radius -->
+                    <p>Border Radius</p>
+                    <div class="sliderContainer">
+                        <input class="inlineElement slider" type="range" min="0" max="100" value="50"
+                            id="borderRadiusSlider">
+                        <span id="borderRadiusValue">0</span>
+                    </div>
+                    <!-- Padding -->
+                    <p>Padding</p>
+                    <div class="sliderContainer">
+                        <input class="inlineElement slider" type="range" min="0" max="100" value="10"
+                            id="paddingSlider">
+                        <span id="paddingValue">0</span>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Other</button>
+            <div class="panel">
+                <div class="column">
+                    <!-- Background color -->
+                    <p>Background Color</p>
+                    <div class="sliderContainer">
+                        <input id="divBackgroundColorPicker" class="colorPicker" type="color" value="#ffffff">
+                        <button class="copyButton" id="divBackgroundColorCopyButton">
+                            Copy
+                        </button>
+                        <button class="pasteButton" id="divBackgroundColorPasteButton">
+                            Paste
+                        </button>
+                    </div>
+                    <!-- Cursor Selecter -->
+                    <p>Cursor</p>
+                    <div class="sliderContainer">
+                        <select name="cursor" id="cursorSelecter">
+                            <option value="pointer">Pointer</option>
+                            <option value="default">Default</option>
+                        </select>
+                    </div>
+                    <!-- UI Element -->
+                    <p>UI Element</p>
+                    <div class="sliderContainer">
+                        <select name="cursor" id="UISelecter">
+                            <option value="button">Button</option>
+                            <option value="slider">Slider</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider UI -->
+    <div class="row" id="sliderForm">
+        <div>
+            <input class="inlineElement slider" type="range" min="0" max="100" value="1" id="paddingSlider">
+        </div>
+        <hr>
+        <div class="column">
+            <!-- Font Size -->
+            <p>Font Size</p>
+            <div class="sliderContainer">
+                <input class="inlineElement slider" id="fontsizeSlider" type="range" min="1" max="100" value="16">
+                <span id="fontsizeValue">0</span>
+            </div>
+            <!-- Border size -->
+            <p>Border Size</p>
+            <div class="sliderContainer">
+                <input class="inlineElement slider" id="borderSizeSlider" type="range" min="0" max="50" value="1">
+                <span id="borderSizeValue">0</span>
+            </div>
+            <!-- Border radius -->
+            <p>Border Radius</p>
+            <div class="sliderContainer">
+                <input class="inlineElement slider" id="borderRadiusSlider" type="range" min="0" max="100" value="50">
+                <span id="borderRadiusValue">0</span>
+            </div>
+            <!-- Padding -->
+            <p>Padding</p>
+            <div class="sliderContainer">
+                <input class="inlineElement slider" id="paddingSlider" type="range" min="0" max="100" value="1">
+                <span id="paddingValue">0</span>
+            </div>
+        </div>
+        <div class="column">
+            <!-- Background color -->
+            <p>Background Color</p>
+            <div class="sliderContainer">
+                <input id="sliderColorPicker" type="color">
+            </div>
+            <!-- Border color -->
+            <p>Border Color</p>
+            <div class="sliderContainer">
+                <input id="borderColorPicker" type="color">
+            </div>
+            <!-- Cursor Selecter -->
+            <p>Cursor</p>
+            <div class="sliderContainer">
+                <select name="cursor" id="cursorSelecter">
+                    <option value="pointer">Pointer</option>
+                    <option value="default">Default</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+    <textarea id="sandbox"></textarea>
+</body>
+
+</html>
